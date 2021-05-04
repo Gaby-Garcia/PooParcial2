@@ -8,7 +8,7 @@
  *
  * @author Garcia
  */
-public abstract class Persona {
+public abstract class Persona implements Comp {
     private String Nombre;
     private String Apellido;
     private int nocodigo;
@@ -16,9 +16,9 @@ public abstract class Persona {
     public Persona() {
     }
 
-    public abstract String MostrarNombre(String Nombre);
-    public abstract String MostrarApellido(String Apellido);
-    public abstract int IngresarCodigo(int nocodigo);
+    public abstract String MostrarNombre();
+    public abstract String MostrarApellido();
+    public abstract int MostrarCodigo();
     
      
     
